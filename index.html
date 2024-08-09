@@ -24,7 +24,14 @@
 <body>
   <main class="container">
     <div class="card">
-      <img src="./images/image-product-mobile.jpg" alt="product mobile-img">
+      <div class="card-img">
+        <picture>
+          <source media="(min-width: 40rem)" srcset="./images/image-product-desktop.jpg">
+          <img src="./images/image-product-mobile.jpg" alt="product image from frontendmentor.io">
+        </picture>
+      </div>
+      <!--<img src="./images/image-product-mobile.jpg" alt="product mobile-img">-->
+
 
       <div class="card-details">
         <span class="prod-cat">PERFUME</span> 

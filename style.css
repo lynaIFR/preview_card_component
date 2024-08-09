@@ -131,3 +131,27 @@ button:active {
   font-weight: 700;
   justify-content: center;
 }
+
+@media only screen and (min-width: 40rem) {
+  .container {
+    max-width: 40rem;
+  }
+
+  .card {
+    flex-direction: row;
+  }
+
+  .card-details {
+    padding: 1.5rem;
+  }
+
+  picture{
+    display: block;
+    max-width: 100%;
+    align-self: flex-start;
+  }
+
+  img {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+}
