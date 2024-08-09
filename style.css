@@ -1,0 +1,133 @@
+:root { 
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Very-Dark-cyan: hsl(158, 36%, 15%);
+  --Cream: hsl(30, 38%, 92%);
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0; 
+  padding:0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Cream);
+  display: grid;
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeSpeed;
+  -moz-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+.container {
+  place-self: center;
+  max-width: 18.75rem;
+}
+
+.card {
+  background-color: var(--White);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 0.5rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  border-radius: 0.5rem 0.5rem 0 0 ;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.prod-cat {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  color: var(--Dark-grayish-blue);
+  letter-spacing: 0.3rem;
+  font-size: small;
+}
+
+.name-desc-prod {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.name-desc-prod h1 {
+  overflow-wrap: break-word;
+  color: var(--Very-dark-blue);
+  line-height: 1;
+  font-family: 'Fraunces';
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.name-desc-prod p {
+  overflow-wrap: break-word;
+  color: var(--Dark-grayish-blue);
+  font-family: 'Montserrat';
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.price {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+.new-price p {
+  overflow-wrap: break-word;
+  font-family: 'Fraunces';
+  color: var(--Dark-cyan);
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+.old-price p {
+  font-size: 0.875rem;
+  color: var(--Dark-grayish-blue);
+  font-family: 'Montserrat';
+}
+
+button {
+  background-color: var(--Dark-cyan);
+  border: none;
+  border-radius: 0.5rem;
+  height: 3rem;
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
+}
+
+button:active {
+  background-color: var(--Very-Dark-cyan);
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  color: var(--White);
+  font-family: 'Montserrat';
+  font-weight: 700;
+  justify-content: center;
+}
